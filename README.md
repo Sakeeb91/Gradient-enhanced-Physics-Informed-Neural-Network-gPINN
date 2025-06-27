@@ -27,19 +27,56 @@ Where:
 
 ## 🎯 Key Features
 
+### Core Physics-Informed Learning
 - **Physics-Informed Learning**: Enforces physical laws during training
 - **Gradient Enhancement**: Incorporates residual gradients for improved accuracy
 - **Inverse Problem Solving**: Infers hidden parameters from sparse data
-- **Real-time Visualization**: Interactive plotting of results and convergence
-- **CPU Optimized**: Runs efficiently on standard hardware
+- **Adaptive Neural Networks**: Self-optimizing architecture and loss weighting
+
+### Production-Ready System
+- **Real-World Data Pipeline**: Complete preprocessing for sensor measurements
+- **Multi-Format Support**: CSV, JSON, Excel, and Pickle data loading
+- **Uncertainty Quantification**: Monte Carlo Dropout and Deep Ensemble methods
+- **Comprehensive Validation**: Built-in data quality assessment and cleaning
+
+### Advanced Analytics
+- **Sensitivity Analysis**: Parameter importance and model robustness testing
+- **Confidence Intervals**: Statistical uncertainty bounds for all predictions
+- **Experiment Tracking**: Full reproducibility with automated logging
+- **Professional Visualization**: Publication-ready plots and dashboards
+
+## 📁 Project Structure
+
+```
+├── gpinn_brinkman_forchheimer.py    # Original research implementation
+├── production_gpinn.py              # Production-ready system
+├── data_utils.py                    # Real-world data loading & preprocessing
+├── uncertainty_quantification.py   # Advanced uncertainty analysis
+├── run_real_world_experiment.py     # Complete experiment runner
+├── test_production_system.py        # System validation tests
+├── generate_visualizations.py       # Physics & methodology plots
+├── test_analytical_solution.py      # Mathematical validation
+├── visualizations/                  # Generated plots and analysis
+├── sample_data/                     # Example datasets (CSV, JSON, Excel)
+├── experiments/                     # Saved experiment results
+└── README.md                        # This file
+```
 
 ## 📋 Requirements
 
+### Core Dependencies
 - Python 3.8+
 - PyTorch 2.0+
 - NumPy 1.24+
 - Matplotlib 3.7+
 - Seaborn 0.12+
+
+### Additional for Production System
+- Pandas (data processing)
+- Scikit-learn (preprocessing & metrics)
+- SciPy (statistical analysis)
+- OpenPyXL (Excel support)
+- JSON/Pickle (data serialization)
 
 ## 🛠️ Installation
 
@@ -56,27 +93,45 @@ pip install -r requirements.txt
 
 ## 🚀 Quick Start
 
-### Option 1: Generate Visualizations Only (No Training)
+### Option 1: Basic Demonstration (Original Research Implementation)
 ```bash
-# Activate virtual environment (if using one)
-source venv/bin/activate
-
-# Generate comprehensive physics and methodology visualizations
+# Generate physics and methodology visualizations
 python generate_visualizations.py
-```
 
-### Option 2: Run Full gPINN Training with Results
-```bash
-# Run complete training and generate result visualizations
+# Run basic gPINN training demonstration
 python gpinn_brinkman_forchheimer.py
 ```
 
-The training script will:
-1. Generate synthetic sensor data with realistic noise
-2. Train the gPINN to learn the fluid velocity field
-3. Simultaneously infer the unknown rock properties (νₑ and K)
-4. Save comprehensive visualizations to `visualizations/` directory
-5. Display quantitative results and accuracy metrics
+### Option 2: Production System for Real-World Data
+```bash
+# Test the production system
+python test_production_system.py
+
+# Run comprehensive real-world experiment with uncertainty quantification
+python run_real_world_experiment.py
+```
+
+### Option 3: Use Your Own Data
+```bash
+# Load and preprocess your real sensor data
+from data_utils import RealWorldDataLoader
+from production_gpinn import ModelConfig, AdaptiveProductionPINN
+
+# Your data should have columns: x_position, velocity, measurement_error
+loader = RealWorldDataLoader()
+data = loader.load_csv_data('your_data.csv')
+
+# Train production model with uncertainty quantification
+# See run_real_world_experiment.py for complete example
+```
+
+The production system provides:
+1. **Advanced data preprocessing** with quality validation and cleaning
+2. **Adaptive neural networks** with self-optimizing hyperparameters
+3. **Comprehensive uncertainty quantification** with confidence intervals
+4. **Real-world simulation** of geothermal field measurement campaigns
+5. **Professional visualization suite** with publication-ready plots
+6. **Experiment tracking** with full reproducibility and checkpointing
 
 ## 📊 Results & Visualizations
 

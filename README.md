@@ -56,19 +56,29 @@ pip install -r requirements.txt
 
 ## 🚀 Quick Start
 
-Run the main gPINN solver:
-
+### Option 1: Generate Visualizations Only (No Training)
 ```bash
+# Activate virtual environment (if using one)
+source venv/bin/activate
+
+# Generate comprehensive physics and methodology visualizations
+python generate_visualizations.py
+```
+
+### Option 2: Run Full gPINN Training with Results
+```bash
+# Run complete training and generate result visualizations
 python gpinn_brinkman_forchheimer.py
 ```
 
-The script will:
+The training script will:
 1. Generate synthetic sensor data with realistic noise
 2. Train the gPINN to learn the fluid velocity field
 3. Simultaneously infer the unknown rock properties (νₑ and K)
-4. Display convergence plots and solution comparison
+4. Save comprehensive visualizations to `visualizations/` directory
+5. Display quantitative results and accuracy metrics
 
-## 📊 Results
+## 📊 Results & Visualizations
 
 The gPINN solver typically achieves:
 - **Parameter Accuracy**: <1% error in permeability estimation
@@ -81,6 +91,30 @@ The gPINN solver typically achieves:
 True values:      νe = 1.0000e-03, K = 1.0000e-03
 Predicted values: νe = 9.9847e-04, K = 1.0015e-03
 ```
+
+### 🎨 Comprehensive Visualizations
+
+The project includes extensive visualizations automatically saved to `visualizations/`:
+
+#### Physics & Methodology Plots (Static)
+- **Physics Demonstration**: Effects of permeability and viscosity on flow patterns
+- **Method Comparison**: Traditional vs gPINN approaches (cost, accuracy, timeline)
+- **Application Context**: Real-world geothermal energy applications and economic impact
+- **Technical Schematic**: Complete gPINN workflow and methodology diagram
+
+#### Training Results (Generated during training)
+- **Velocity Field Comparison**: Analytical vs predicted solutions with sensor data
+- **Parameter Convergence**: Real-time learning of rock properties during training
+- **Physics Analysis**: PDE residuals, gradient enhancement, and error distributions
+- **Training Dynamics**: Loss evolution and quantitative accuracy metrics
+
+All plots include:
+- 📊 **Descriptive captions** explaining physical significance
+- 🔬 **Quantitative metrics** with error bars and confidence intervals
+- 🎯 **Real-world context** connecting theory to practical applications
+- 📁 **Dual formats**: High-res PNG for web/presentations, PDF for publications
+
+See [`visualizations/README_VISUALIZATIONS.md`](visualizations/README_VISUALIZATIONS.md) for detailed descriptions and usage instructions.
 
 ## 🧪 Technical Details
 

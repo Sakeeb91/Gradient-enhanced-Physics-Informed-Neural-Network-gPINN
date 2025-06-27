@@ -1,0 +1,927 @@
+{
+  "campaign_info": {
+    "campaign_type": "geothermal_reservoir_characterization",
+    "n_wells": 8,
+    "duration_days": 15,
+    "domain_length_m": 2000,
+    "reservoir_depth_m": 2839.9813094829997,
+    "reservoir_temp_c": 205.37091592075217,
+    "true_parameters": {
+      "nu_e": 0.0009036445989905975,
+      "K": 0.0019016306945317985,
+      "nu": 0.001,
+      "g": 1.3136890923021518
+    },
+    "environmental_conditions": {
+      "seasonal_variation": true,
+      "pressure_variation": true,
+      "well_efficiency_variation": true
+    }
+  },
+  "wells": [
+    {
+      "well_id": "GW-001",
+      "position": {
+        "x": 0.25809368882075373
+      },
+      "measurements": [
+        {
+          "timestamp": "2025-06-12T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 208.14297263310237,
+          "pressure": 49.07698454081913
+        },
+        {
+          "timestamp": "2025-06-13T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 206.22129636219367,
+          "pressure": 48.00751617561191
+        },
+        {
+          "timestamp": "2025-06-14T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 207.25953602180954,
+          "pressure": 49.42732059171782
+        },
+        {
+          "timestamp": "2025-06-15T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 207.17001076122227,
+          "pressure": 48.602151996326555
+        },
+        {
+          "timestamp": "2025-06-16T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 193.158980056851,
+          "pressure": 50.12539953466764
+        },
+        {
+          "timestamp": "2025-06-17T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 198.6478223816392,
+          "pressure": 50.07598437591487
+        },
+        {
+          "timestamp": "2025-06-18T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 206.48905846100553,
+          "pressure": 49.172142062032535
+        },
+        {
+          "timestamp": "2025-06-19T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 203.23271902187065,
+          "pressure": 49.494489916182786
+        },
+        {
+          "timestamp": "2025-06-20T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 198.4731135096819,
+          "pressure": 47.413733005299754
+        },
+        {
+          "timestamp": "2025-06-21T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 206.85601712290483,
+          "pressure": 49.079259883525914
+        },
+        {
+          "timestamp": "2025-06-22T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 208.15493371449432,
+          "pressure": 46.19001991188253
+        },
+        {
+          "timestamp": "2025-06-23T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 194.55249966664405,
+          "pressure": 49.677475317002994
+        },
+        {
+          "timestamp": "2025-06-24T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 200.7811549124472,
+          "pressure": 48.90700012673612
+        },
+        {
+          "timestamp": "2025-06-25T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 215.58397419856232,
+          "pressure": 50.31085669425977
+        },
+        {
+          "timestamp": "2025-06-26T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 210.33136483352428,
+          "pressure": 49.70376995288834
+        }
+      ]
+    },
+    {
+      "well_id": "GW-002",
+      "position": {
+        "x": 0.2826770335667961
+      },
+      "measurements": [
+        {
+          "timestamp": "2025-06-12T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 199.30238271992206,
+          "pressure": 47.713387039937416
+        },
+        {
+          "timestamp": "2025-06-13T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 200.401023703772,
+          "pressure": 48.36993548314788
+        },
+        {
+          "timestamp": "2025-06-14T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 211.06116058411834,
+          "pressure": 48.15596719753827
+        },
+        {
+          "timestamp": "2025-06-15T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 204.76723220805846,
+          "pressure": 46.50610896487258
+        },
+        {
+          "timestamp": "2025-06-16T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 214.46385029133447,
+          "pressure": 48.478367023540024
+        },
+        {
+          "timestamp": "2025-06-17T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 201.6458432403547,
+          "pressure": 47.556818932382576
+        },
+        {
+          "timestamp": "2025-06-18T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 201.99855620621946,
+          "pressure": 47.32682813293052
+        },
+        {
+          "timestamp": "2025-06-19T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 211.16380125847684,
+          "pressure": 47.55223287811513
+        },
+        {
+          "timestamp": "2025-06-20T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 207.5133112454837,
+          "pressure": 50.151233270999064
+        },
+        {
+          "timestamp": "2025-06-21T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 203.09232664143403,
+          "pressure": 48.11049277737611
+        },
+        {
+          "timestamp": "2025-06-22T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 210.70260938805387,
+          "pressure": 47.301914281568095
+        },
+        {
+          "timestamp": "2025-06-23T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 211.10231582482038,
+          "pressure": 48.621974025488036
+        },
+        {
+          "timestamp": "2025-06-24T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 212.2203361638723,
+          "pressure": 48.19747900518653
+        },
+        {
+          "timestamp": "2025-06-25T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 202.887302597035,
+          "pressure": 49.16376897127319
+        },
+        {
+          "timestamp": "2025-06-26T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 212.48715336674724,
+          "pressure": 47.08212262943099
+        }
+      ]
+    },
+    {
+      "well_id": "GW-003",
+      "position": {
+        "x": 0.3207791102109282
+      },
+      "measurements": [
+        {
+          "timestamp": "2025-06-12T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 200.24095898853304,
+          "pressure": 48.49551735543387
+        },
+        {
+          "timestamp": "2025-06-13T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 209.80872700277376,
+          "pressure": 48.31274965084505
+        },
+        {
+          "timestamp": "2025-06-14T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 211.00639153366348,
+          "pressure": 47.114004311549586
+        },
+        {
+          "timestamp": "2025-06-15T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 204.2857451817155,
+          "pressure": 48.23118766253652
+        },
+        {
+          "timestamp": "2025-06-16T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 201.7991679063975,
+          "pressure": 48.3606847119938
+        },
+        {
+          "timestamp": "2025-06-17T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 210.64423709635426,
+          "pressure": 48.45145341456939
+        },
+        {
+          "timestamp": "2025-06-18T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 202.92671382268006,
+          "pressure": 46.61652900848553
+        },
+        {
+          "timestamp": "2025-06-19T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 209.3159510796067,
+          "pressure": 48.92451994632067
+        },
+        {
+          "timestamp": "2025-06-20T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 208.41092882568398,
+          "pressure": 48.34127406042664
+        },
+        {
+          "timestamp": "2025-06-21T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 201.70106027120505,
+          "pressure": 48.77822688201707
+        },
+        {
+          "timestamp": "2025-06-22T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 204.41454482739337,
+          "pressure": 49.03795236109274
+        },
+        {
+          "timestamp": "2025-06-23T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 208.00082905502717,
+          "pressure": 48.84409986306402
+        },
+        {
+          "timestamp": "2025-06-24T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 207.09367889406184,
+          "pressure": 47.71326323485495
+        },
+        {
+          "timestamp": "2025-06-25T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 208.21753119137472,
+          "pressure": 47.8316303102947
+        },
+        {
+          "timestamp": "2025-06-26T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 205.0064565660243,
+          "pressure": 48.449455255397275
+        }
+      ]
+    },
+    {
+      "well_id": "GW-004",
+      "position": {
+        "x": 0.33103049231212267
+      },
+      "measurements": [
+        {
+          "timestamp": "2025-06-12T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 201.05382370336503,
+          "pressure": 46.85691356884023
+        },
+        {
+          "timestamp": "2025-06-13T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 204.5581606918754,
+          "pressure": 51.0315032310088
+        },
+        {
+          "timestamp": "2025-06-14T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 193.99537872222075,
+          "pressure": 49.28611218398575
+        },
+        {
+          "timestamp": "2025-06-15T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 215.21061253711642,
+          "pressure": 48.15690156651695
+        },
+        {
+          "timestamp": "2025-06-16T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 195.43353199537603,
+          "pressure": 46.57227055100256
+        },
+        {
+          "timestamp": "2025-06-17T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 213.47937509966465,
+          "pressure": 45.965068123134095
+        },
+        {
+          "timestamp": "2025-06-18T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 205.037410860916,
+          "pressure": 48.05923630719923
+        },
+        {
+          "timestamp": "2025-06-19T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 205.33390601413376,
+          "pressure": 49.42021225906914
+        },
+        {
+          "timestamp": "2025-06-20T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 202.2977985332039,
+          "pressure": 46.778879292673565
+        },
+        {
+          "timestamp": "2025-06-21T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 204.16544116191278,
+          "pressure": 48.013954968978716
+        },
+        {
+          "timestamp": "2025-06-22T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 196.69822347255422,
+          "pressure": 48.08331818615299
+        },
+        {
+          "timestamp": "2025-06-23T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 207.49568828856752,
+          "pressure": 48.57542914780079
+        },
+        {
+          "timestamp": "2025-06-24T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 198.68596085704587,
+          "pressure": 49.27069429505435
+        },
+        {
+          "timestamp": "2025-06-25T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 209.37184861814313,
+          "pressure": 50.51626088162742
+        },
+        {
+          "timestamp": "2025-06-26T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 197.87682313256096,
+          "pressure": 47.67623248528124
+        }
+      ]
+    },
+    {
+      "well_id": "GW-005",
+      "position": {
+        "x": 0.595425414573367
+      },
+      "measurements": [
+        {
+          "timestamp": "2025-06-12T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 198.87384696199086,
+          "pressure": 47.542884781437614
+        },
+        {
+          "timestamp": "2025-06-13T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 200.74533080605374,
+          "pressure": 49.80171414073966
+        },
+        {
+          "timestamp": "2025-06-14T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 204.0178208037595,
+          "pressure": 47.60224840291666
+        },
+        {
+          "timestamp": "2025-06-15T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 205.56000736566494,
+          "pressure": 48.58230062403681
+        },
+        {
+          "timestamp": "2025-06-16T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 205.14776767815547,
+          "pressure": 48.04673070568242
+        },
+        {
+          "timestamp": "2025-06-17T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 203.71322626731111,
+          "pressure": 50.20384305858811
+        },
+        {
+          "timestamp": "2025-06-18T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 205.1219191498874,
+          "pressure": 49.959462580643795
+        },
+        {
+          "timestamp": "2025-06-19T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 216.35890997858854,
+          "pressure": 47.26585978301666
+        },
+        {
+          "timestamp": "2025-06-20T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 208.77320937203274,
+          "pressure": 45.35173794741287
+        },
+        {
+          "timestamp": "2025-06-21T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 208.17265270573174,
+          "pressure": 47.826791725285744
+        },
+        {
+          "timestamp": "2025-06-22T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 203.79853399571735,
+          "pressure": 47.77766854314491
+        },
+        {
+          "timestamp": "2025-06-23T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 201.3587949439819,
+          "pressure": 49.5926424431433
+        },
+        {
+          "timestamp": "2025-06-24T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 191.48992870356813,
+          "pressure": 49.766254756335286
+        },
+        {
+          "timestamp": "2025-06-25T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 203.99623162314083,
+          "pressure": 47.49011065608442
+        },
+        {
+          "timestamp": "2025-06-26T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 195.4594663308116,
+          "pressure": 48.70481120327036
+        }
+      ]
+    },
+    {
+      "well_id": "GW-006",
+      "position": {
+        "x": 0.7244657313943462
+      },
+      "measurements": [
+        {
+          "timestamp": "2025-06-12T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 207.37253730192595,
+          "pressure": 47.00808827648448
+        },
+        {
+          "timestamp": "2025-06-13T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 211.18315972320534,
+          "pressure": 49.98291122659008
+        },
+        {
+          "timestamp": "2025-06-14T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 206.9114931256348,
+          "pressure": 48.64113174539343
+        },
+        {
+          "timestamp": "2025-06-15T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 193.93129054994145,
+          "pressure": 46.987161880695695
+        },
+        {
+          "timestamp": "2025-06-16T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 212.77683542002057,
+          "pressure": 47.39441628613335
+        },
+        {
+          "timestamp": "2025-06-17T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 201.48822133380781,
+          "pressure": 48.461272393606585
+        },
+        {
+          "timestamp": "2025-06-18T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 196.59143763401752,
+          "pressure": 48.987253847528024
+        },
+        {
+          "timestamp": "2025-06-19T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 207.094091715553,
+          "pressure": 47.8347094230642
+        },
+        {
+          "timestamp": "2025-06-20T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 203.64252768962248,
+          "pressure": 48.25399600506016
+        },
+        {
+          "timestamp": "2025-06-21T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 199.4347802445777,
+          "pressure": 47.337166878955415
+        },
+        {
+          "timestamp": "2025-06-22T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 199.61739086346367,
+          "pressure": 47.394660282289195
+        },
+        {
+          "timestamp": "2025-06-23T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 203.50134067513574,
+          "pressure": 48.45921185951334
+        },
+        {
+          "timestamp": "2025-06-24T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 195.5413379171903,
+          "pressure": 47.5161567474956
+        },
+        {
+          "timestamp": "2025-06-25T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 209.17715064534627,
+          "pressure": 49.86886221884309
+        },
+        {
+          "timestamp": "2025-06-26T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 205.99380669178603,
+          "pressure": 48.45648945809017
+        }
+      ]
+    },
+    {
+      "well_id": "GW-007",
+      "position": {
+        "x": 0.7377806436835028
+      },
+      "measurements": [
+        {
+          "timestamp": "2025-06-12T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 202.7517689206613,
+          "pressure": 49.12992873247196
+        },
+        {
+          "timestamp": "2025-06-13T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 192.8568957451316,
+          "pressure": 51.03152067027527
+        },
+        {
+          "timestamp": "2025-06-14T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 206.38971628054543,
+          "pressure": 47.0262003014256
+        },
+        {
+          "timestamp": "2025-06-15T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 208.5681221039558,
+          "pressure": 48.11099800012852
+        },
+        {
+          "timestamp": "2025-06-16T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 201.3191420403628,
+          "pressure": 50.33138043250448
+        },
+        {
+          "timestamp": "2025-06-17T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 204.56918861560015,
+          "pressure": 49.38123929066414
+        },
+        {
+          "timestamp": "2025-06-18T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 203.9956120228783,
+          "pressure": 47.95510525507541
+        },
+        {
+          "timestamp": "2025-06-19T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 205.96610398082044,
+          "pressure": 51.00965109486254
+        },
+        {
+          "timestamp": "2025-06-20T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 202.34537418340994,
+          "pressure": 48.533908148227106
+        },
+        {
+          "timestamp": "2025-06-21T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 199.75972519680258,
+          "pressure": 49.117530441389874
+        },
+        {
+          "timestamp": "2025-06-22T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 207.93975290888304,
+          "pressure": 50.21262264958475
+        },
+        {
+          "timestamp": "2025-06-23T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 207.50863108746026,
+          "pressure": 46.3664569735813
+        },
+        {
+          "timestamp": "2025-06-24T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 201.22110228581647,
+          "pressure": 49.62347481425883
+        },
+        {
+          "timestamp": "2025-06-25T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 212.83343397340164,
+          "pressure": 47.79940775796579
+        },
+        {
+          "timestamp": "2025-06-26T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 197.47872056464965,
+          "pressure": 48.987879272420884
+        }
+      ]
+    },
+    {
+      "well_id": "GW-008",
+      "position": {
+        "x": 0.8966864311595206
+      },
+      "measurements": [
+        {
+          "timestamp": "2025-06-12T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 205.64821826770003,
+          "pressure": 49.956437165236366
+        },
+        {
+          "timestamp": "2025-06-13T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 200.75855938007652,
+          "pressure": 46.68809803678806
+        },
+        {
+          "timestamp": "2025-06-14T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 207.18362165821773,
+          "pressure": 47.52991283365354
+        },
+        {
+          "timestamp": "2025-06-15T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 202.33214937547228,
+          "pressure": 48.73586954519068
+        },
+        {
+          "timestamp": "2025-06-16T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 204.6585584433032,
+          "pressure": 48.643983901828044
+        },
+        {
+          "timestamp": "2025-06-17T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 207.31443612181172,
+          "pressure": 50.946551354742454
+        },
+        {
+          "timestamp": "2025-06-18T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 203.63573841834418,
+          "pressure": 49.80738730284223
+        },
+        {
+          "timestamp": "2025-06-19T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 209.28195036757475,
+          "pressure": 48.55737489110075
+        },
+        {
+          "timestamp": "2025-06-20T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 205.34866814799275,
+          "pressure": 47.791436663452615
+        },
+        {
+          "timestamp": "2025-06-21T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 211.82367702893964,
+          "pressure": 48.013639780403764
+        },
+        {
+          "timestamp": "2025-06-22T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 218.15227375764752,
+          "pressure": 48.36439932223041
+        },
+        {
+          "timestamp": "2025-06-23T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 206.9124850506571,
+          "pressure": 49.56313325063778
+        },
+        {
+          "timestamp": "2025-06-24T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 203.97505084072242,
+          "pressure": 47.731966910959805
+        },
+        {
+          "timestamp": "2025-06-25T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 197.6175452058891,
+          "pressure": 48.00001474320191
+        },
+        {
+          "timestamp": "2025-06-26T13:35:21.684316",
+          "velocity": NaN,
+          "error": NaN,
+          "temperature": 204.59188320313925,
+          "pressure": 48.9089902048652
+        }
+      ]
+    }
+  ]
+}

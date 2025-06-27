@@ -143,7 +143,25 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📚 Citation
 
-If you use this code in your research, please cite:
+This implementation is based on the gradient-enhanced PINN methodology. Please cite the original paper:
+
+```bibtex
+@article{Yu_2022,
+   title={Gradient-enhanced physics-informed neural networks for forward and inverse PDE problems},
+   volume={393},
+   ISSN={0045-7825},
+   url={http://dx.doi.org/10.1016/j.cma.2022.114823},
+   DOI={10.1016/j.cma.2022.114823},
+   journal={Computer Methods in Applied Mechanics and Engineering},
+   publisher={Elsevier BV},
+   author={Yu, Jeremy and Lu, Lu and Meng, Xuhui and Karniadakis, George Em},
+   year={2022},
+   month=apr, 
+   pages={114823}
+}
+```
+
+If you use this specific implementation, please also cite:
 
 ```bibtex
 @software{gpinn_brinkman_forchheimer,

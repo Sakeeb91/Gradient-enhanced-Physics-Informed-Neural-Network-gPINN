@@ -48,8 +48,10 @@ Where:
 ## 📁 Project Structure
 
 ```
-├── gpinn_brinkman_forchheimer.py    # Original research implementation
-├── production_gpinn.py              # Production-ready system
+├── gpinn_brinkman_forchheimer.py    # Original PyTorch research implementation
+├── production_gpinn.py              # Production PyTorch system (advanced features)
+├── numpy_gpinn.py                   # 🆕 Pure NumPy implementation (no PyTorch)
+├── sklearn_gpinn.py                 # 🆕 Scikit-learn implementation (max compatibility)
 ├── data_utils.py                    # Real-world data loading & preprocessing
 ├── uncertainty_quantification.py   # Advanced uncertainty analysis
 ├── run_real_world_experiment.py     # Complete experiment runner
@@ -64,19 +66,39 @@ Where:
 
 ## 📋 Requirements
 
-### Core Dependencies
-- Python 3.8+
-- PyTorch 2.0+
-- NumPy 1.24+
-- Matplotlib 3.7+
-- Seaborn 0.12+
+### Implementation Options
 
-### Additional for Production System
-- Pandas (data processing)
-- Scikit-learn (preprocessing & metrics)
-- SciPy (statistical analysis)
-- OpenPyXL (Excel support)
-- JSON/Pickle (data serialization)
+#### Option 1: PyTorch Implementation (Full Features)
+```bash
+pip install torch numpy matplotlib seaborn pandas scikit-learn scipy openpyxl
+```
+- **Files**: `production_gpinn.py`, `run_real_world_experiment.py`
+- **Features**: GPU acceleration, advanced optimizers, full uncertainty quantification
+- **Use case**: Research, high-performance computing, CUDA-enabled systems
+
+#### Option 2: Pure NumPy Implementation (No PyTorch)
+```bash
+pip install numpy matplotlib seaborn pandas scikit-learn scipy
+```
+- **Files**: `numpy_gpinn.py`
+- **Features**: Custom neural networks, automatic differentiation, ensemble methods
+- **Use case**: Systems without PyTorch, educational purposes, maximum control
+
+#### Option 3: Scikit-learn Implementation (Maximum Compatibility)  
+```bash
+pip install scikit-learn numpy matplotlib seaborn pandas scipy
+```
+- **Files**: `sklearn_gpinn.py`
+- **Features**: MLPRegressor backbone, physics constraints, uncertainty quantification
+- **Use case**: Enterprise deployment, maximum compatibility, minimal dependencies
+
+#### Option 4: Basic Demonstration (Minimal Dependencies)
+```bash
+pip install numpy matplotlib seaborn
+```
+- **Files**: `gpinn_brinkman_forchheimer.py`, `generate_visualizations.py`
+- **Features**: Core gPINN concept, physics visualization, research demonstration
+- **Use case**: Learning, presentations, concept validation
 
 ## 🛠️ Installation
 
@@ -93,36 +115,61 @@ pip install -r requirements.txt
 
 ## 🚀 Quick Start
 
-### Option 1: Basic Demonstration (Original Research Implementation)
+### Choose Your Implementation
+
+#### 🚀 Quick Start (Minimal Dependencies - Works Everywhere)
 ```bash
-# Generate physics and methodology visualizations
+# Install minimal requirements
+pip install numpy matplotlib seaborn
+
+# Generate comprehensive physics visualizations
 python generate_visualizations.py
 
-# Run basic gPINN training demonstration
+# Run basic gPINN demonstration  
 python gpinn_brinkman_forchheimer.py
 ```
 
-### Option 2: Production System for Real-World Data
+#### 🔬 Scikit-learn Implementation (Recommended for Most Users)
 ```bash
+# Install scikit-learn dependencies
+pip install scikit-learn numpy matplotlib seaborn pandas scipy
+
+# Run maximum compatibility implementation
+python sklearn_gpinn.py
+```
+
+#### 🧮 Pure NumPy Implementation (Educational/Custom Control)
+```bash
+# Install NumPy dependencies  
+pip install numpy matplotlib seaborn pandas scipy
+
+# Run pure NumPy implementation
+python numpy_gpinn.py
+```
+
+#### ⚡ PyTorch Implementation (Full Features - Requires PyTorch)
+```bash
+# Install PyTorch dependencies (if PyTorch is available)
+pip install torch numpy matplotlib seaborn pandas scikit-learn scipy openpyxl
+
 # Test the production system
 python test_production_system.py
 
-# Run comprehensive real-world experiment with uncertainty quantification
+# Run comprehensive real-world experiment
 python run_real_world_experiment.py
 ```
 
-### Option 3: Use Your Own Data
+#### 📊 Use Your Own Data (Any Implementation)
 ```bash
-# Load and preprocess your real sensor data
+# Example with scikit-learn implementation
+from sklearn_gpinn import SklearnGPINNConfig, SklearnGPINNTrainer
 from data_utils import RealWorldDataLoader
-from production_gpinn import ModelConfig, AdaptiveProductionPINN
 
-# Your data should have columns: x_position, velocity, measurement_error
+# Your CSV should have columns: x_position, velocity, measurement_error
 loader = RealWorldDataLoader()
 data = loader.load_csv_data('your_data.csv')
 
-# Train production model with uncertainty quantification
-# See run_real_world_experiment.py for complete example
+# Train model (see implementation files for complete examples)
 ```
 
 The production system provides:

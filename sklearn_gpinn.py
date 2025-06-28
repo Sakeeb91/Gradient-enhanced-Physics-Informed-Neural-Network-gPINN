@@ -86,8 +86,9 @@ class SklearnPhysicsInformedNN:
         )
         
         # Physics parameters (log scale for positivity)
-        self.log_nu_e = -6.0  # log(1e-6)
-        self.log_K = -6.0     # log(1e-6)
+        # Better initialization based on typical values
+        self.log_nu_e = -5.5  # log(4e-6) - closer to realistic water viscosity
+        self.log_K = -5.5     # log(4e-6) - reasonable permeability start
         
         # Training history
         self.history = {
@@ -267,7 +268,7 @@ class SklearnGPINNTrainer:
         if self.config.physics_optimizer == 'differential_evolution':
             result = differential_evolution(
                 objective,
-                bounds=[(-10, -2), (-10, -2)],  # Bounds for log_nu_e, log_K
+                bounds=[(-8, -1), (-8, -1)],  # Wider bounds: ~3e-4 to 0.37 for both params
                 maxiter=self.config.physics_iterations,
                 seed=self.config.random_state,
                 disp=True
@@ -275,9 +276,9 @@ class SklearnGPINNTrainer:
         else:
             result = minimize(
                 objective,
-                x0=[-6.0, -6.0],  # Initial guess
+                x0=[-5.5, -5.5],  # Better initial guess
                 method='L-BFGS-B',
-                bounds=[(-10, -2), (-10, -2)],
+                bounds=[(-8, -1), (-8, -1)],  # Consistent wider bounds
                 options={'maxiter': self.config.physics_iterations}
             )
         

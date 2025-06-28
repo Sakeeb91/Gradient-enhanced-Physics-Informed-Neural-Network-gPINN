@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-06-28T14:19:15.704097",
+  "analysis_date": "2025-06-28T14:22:56.206623",
   "datasets_analyzed": [
     "kansas",
     "nevada"
@@ -16,11 +16,11 @@
       ],
       "implementations": {
         "sklearn": {
-          "K_estimated": 0.0037534114528073193,
-          "nu_e_estimated": 4.782399667995389e-05,
-          "training_time": 3.6912832260131836,
-          "K_relative_error": 0.997605619705034,
-          "nu_e_relative_error": 0.9751701856952304
+          "K_estimated": 0.006137578670776248,
+          "nu_e_estimated": 0.00036145887372729304,
+          "training_time": 1.9504609107971191,
+          "K_relative_error": 2.266484849390631,
+          "nu_e_relative_error": 0.8123336120667256
         }
       },
       "true_parameters": {
@@ -38,11 +38,11 @@
       ],
       "implementations": {
         "sklearn": {
-          "K_estimated": 0.004168090798640341,
-          "nu_e_estimated": 0.0003081737916837115,
-          "training_time": 1.4787120819091797,
-          "K_relative_error": 0.404136665892762,
-          "nu_e_relative_error": 0.3840189678066319
+          "K_estimated": 0.017505152001265442,
+          "nu_e_estimated": 0.001792326394933526,
+          "training_time": 1.4243049621582031,
+          "K_relative_error": 1.5025074403202958,
+          "nu_e_relative_error": 2.5825209429609184
         }
       },
       "true_parameters": {

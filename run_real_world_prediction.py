@@ -190,6 +190,11 @@ class RealWorldGPINNAnalyzer:
         K_est = trainer.model.K
         nu_e_est = trainer.model.nu_e
         
+        # Get loss history from trainer
+        loss_history = []
+        if hasattr(trainer.model, 'history') and 'total_loss' in trainer.model.history:
+            loss_history = trainer.model.history['total_loss']
+        
         return {
             'implementation': 'Scikit-learn',
             'K_estimated': float(K_est),
@@ -197,6 +202,8 @@ class RealWorldGPINNAnalyzer:
             'x_pred': x_pred.flatten(),
             'u_pred': u_pred.flatten(),
             'training_time': training_time,
+            'loss_history': loss_history,
+            'final_loss': loss_history[-1] if loss_history else None,
             'convergence': trainer.model.nn.n_iter_ if hasattr(trainer.model.nn, 'n_iter_') else None
         }
         
@@ -462,17 +469,43 @@ class RealWorldGPINNAnalyzer:
         # Plot 4: Training convergence
         ax = axs[1, 1]
         
+        has_convergence_data = False
         for impl_name, impl_result in result['implementations'].items():
             if impl_result and 'loss_history' in impl_result and impl_result['loss_history']:
                 loss_history = impl_result['loss_history']
                 color = colors.get(impl_name, 'gray')
                 ax.semilogy(loss_history, color=color, linewidth=2,
                            label=f"{impl_result['implementation']}")
+                has_convergence_data = True
         
-        ax.set_xlabel('Epoch')
-        ax.set_ylabel('Loss (log scale)')
-        ax.set_title('Training Convergence')
-        ax.legend()
+        if not has_convergence_data:
+            # Show final loss values as bars if no convergence history
+            implementations = []
+            final_losses = []
+            
+            for impl_name, impl_result in result['implementations'].items():
+                if impl_result and 'final_loss' in impl_result and impl_result['final_loss'] is not None:
+                    implementations.append(impl_result['implementation'])
+                    final_losses.append(impl_result['final_loss'])
+            
+            if final_losses:
+                x_pos = np.arange(len(implementations))
+                ax.bar(x_pos, final_losses, alpha=0.7, color=[colors.get(impl.lower(), 'gray') for impl in implementations])
+                ax.set_xticks(x_pos)
+                ax.set_xticklabels(implementations)
+                ax.set_ylabel('Final Loss')
+                ax.set_title('Final Training Loss')
+            else:
+                ax.text(0.5, 0.5, 'No convergence data available', 
+                       transform=ax.transAxes, ha='center', va='center',
+                       fontsize=14, bbox=dict(boxstyle="round,pad=0.3", facecolor='lightgray'))
+                ax.set_title('Training Convergence')
+        else:
+            ax.set_xlabel('Epoch')
+            ax.set_ylabel('Loss (log scale)')
+            ax.set_title('Training Convergence')
+            ax.legend()
+        
         ax.grid(True, alpha=0.3)
         
         plt.tight_layout()

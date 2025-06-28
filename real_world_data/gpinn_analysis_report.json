@@ -1,0 +1,57 @@
+{
+  "analysis_date": "2025-06-28T14:19:15.704097",
+  "datasets_analyzed": [
+    "kansas",
+    "nevada"
+  ],
+  "implementations_tested": [
+    "sklearn"
+  ],
+  "summary_statistics": {
+    "kansas": {
+      "n_measurements": 12,
+      "domain_size": [
+        0,
+        1
+      ],
+      "implementations": {
+        "sklearn": {
+          "K_estimated": 0.0037534114528073193,
+          "nu_e_estimated": 4.782399667995389e-05,
+          "training_time": 3.6912832260131836,
+          "K_relative_error": 0.997605619705034,
+          "nu_e_relative_error": 0.9751701856952304
+        }
+      },
+      "true_parameters": {
+        "K_true": 0.0018789551930483391,
+        "nu_e_true": 0.0019260714596148743,
+        "nu_water": 1.1e-06,
+        "hydraulic_gradient": 0.002
+      }
+    },
+    "nevada": {
+      "n_measurements": 8,
+      "domain_size": [
+        0,
+        1
+      ],
+      "implementations": {
+        "sklearn": {
+          "K_estimated": 0.004168090798640341,
+          "nu_e_estimated": 0.0003081737916837115,
+          "training_time": 1.4787120819091797,
+          "K_relative_error": 0.404136665892762,
+          "nu_e_relative_error": 0.3840189678066319
+        }
+      },
+      "true_parameters": {
+        "K_true": 0.006995044937418831,
+        "nu_e_true": 0.0005002975344652657,
+        "nu_water": 3e-07,
+        "pressure_gradient": 2.0
+      }
+    }
+  },
+  "recommendations": []
+}

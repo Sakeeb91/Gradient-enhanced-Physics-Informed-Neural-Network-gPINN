@@ -1,0 +1,29 @@
+{
+  "dataset_type": "geothermal_realistic",
+  "reservoir_params": {
+    "reservoir_name": "Nevada Geothermal Field (Synthetic)",
+    "temperature_range_c": [
+      180,
+      220
+    ],
+    "depth_range_m": [
+      1500,
+      2500
+    ],
+    "K_range": [
+      0.0001,
+      0.01
+    ],
+    "nu_e_range": [
+      0.0003,
+      0.001
+    ],
+    "pressure_gradient_mpa_per_km": 0.5
+  },
+  "true_parameters": {
+    "K_true": 0.006995044937418831,
+    "nu_e_true": 0.0005002975344652657,
+    "nu_water": 3e-07,
+    "pressure_gradient": 2.0
+  }
+}

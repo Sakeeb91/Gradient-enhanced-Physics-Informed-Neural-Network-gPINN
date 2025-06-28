@@ -1,0 +1,20 @@
+{
+  "dataset_type": "synthetic_realistic",
+  "based_on": "High Plains Aquifer, Kansas",
+  "true_parameters": {
+    "K_true": 0.0018789551930483391,
+    "nu_e_true": 0.0019260714596148743,
+    "nu_water": 1.1e-06,
+    "hydraulic_gradient": 0.002
+  },
+  "domain_info": {
+    "length_km": 10.0,
+    "n_wells": 12,
+    "measurement_period": "2023-2024"
+  },
+  "data_quality": {
+    "measurement_uncertainty": "5% + 0.001 m/s baseline",
+    "spatial_coverage": "uniform",
+    "temporal_coverage": "single campaign"
+  }
+}

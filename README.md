@@ -262,21 +262,6 @@ The modular design supports multiple implementation backends (PyTorch, scikit-le
 ### 📐 Engineering Considerations
 Special attention was given to uncertainty quantification and real-world data handling, recognizing that practical applications require robust error estimation and data quality assessment. The system incorporates statistical validation techniques and comprehensive experiment tracking for reproducible research outcomes.
 
-## 📞 Professional Contact
-
-<div align="center">
-
-**Sakeeb Rahman**  
-*AI/ML Engineer & Computational Physicist*
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue.svg)](https://linkedin.com/in/sakeeb-rahman)
-[![Email](https://img.shields.io/badge/Email-Contact-red.svg)](mailto:rahman.sakeeb@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-Portfolio-black.svg)](https://github.com/Sakeeb91)
-
-**Available for**: ML Engineering roles, Research collaboration, Consulting opportunities
-
-</div>
-
 ---
 
 ## 📄 Citation & Academic Impact
